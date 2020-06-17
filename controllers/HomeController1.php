@@ -6,20 +6,24 @@ namespace RootNamespaceOfYourApp\Controllers;
 use PhpMvc\Controller;
 
 // expand your class with the base controller class
-class HomeController extends Controller {
+class HomeController extends Controller
+{
 
     // create here action methods for the views of this controller
     // the action methods must have a modifier public
 
-    public function index() {
+    public function index()
+    {
         return $this->view();
     }
 
-    public function about() {
+    public function about()
+    {
         return $this->view();
     }
 
-    public function contact() {
+    public function contact()
+    {
         return $this->view();
     }
 
@@ -29,7 +33,8 @@ class HomeController extends Controller {
     // /home/example/json
     // /home/example/file
     // /home/example/view
-    public function example($id = null) {
+    public function example($id = null)
+    {
         switch ($id) {
             case 'content':
                 return $this->content('Text plain');
@@ -38,7 +43,7 @@ class HomeController extends Controller {
                 return $this->json(array('message' => 'This is the JSON data. You can use an array or pass an instance of the object.'));
 
             case 'file':
-            return $this->file('~/content/images/php-mvc-logo.png');
+                return $this->file('~/content/images/php-mvc-logo.png');
 
             default:
                 return $this->view('index');

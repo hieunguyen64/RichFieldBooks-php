@@ -1,10 +1,15 @@
-<?php 
+<?php
+use RichFieldBooks\Controllers\Home;
 
 // use composer autoload for dependencies
 require_once getcwd() . '/vendor/autoload.php';
 
-echo $_GET;
+include "config.php";
 
-echo phpinfo();
+// include 'model/example.php';
 
-?>
+// include 'views/example.php';
+
+include "controllers/Home.php";
+
+$home = new Home();

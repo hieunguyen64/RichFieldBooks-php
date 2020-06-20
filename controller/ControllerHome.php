@@ -1,4 +1,5 @@
 <?php
+
 class ControllerHome
 {
     public function __construct()
@@ -19,8 +20,8 @@ class ControllerHome
         $model = new ModelBooks();
         $dataallbooks = $model->getAllBooks();
         include 'view/home_index.php'; //load view
-
     }
+
     public function f()
     {
         echo "<br> Noi dung ham f...";

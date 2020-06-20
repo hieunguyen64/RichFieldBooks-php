@@ -1,4 +1,5 @@
 <?php
+
 class ControllerCart
 {
     public function __construct()
@@ -18,8 +19,8 @@ class ControllerCart
 
     public function index()
     {
-
     }
+
     public function f()
     {
         echo "<br> Noi dung ham f...";

@@ -1,4 +1,5 @@
 <?php
+
 class ModelBooks extends ModelDb
 {
     public function searchByName()

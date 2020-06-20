@@ -11,10 +11,13 @@
 		All books
 	</h1>
 	<div class="container">
-		<pre><?php
-//echo $datasach;
-print_r($dataallbooks);
-?>
+		<pre>
+			<?php
+			//echo $datasach;
+			print_r($dataallbooks);
+			?>
+		</pre>
 	</div>
 </body>
+
 </html>

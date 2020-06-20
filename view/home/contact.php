@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 use PhpMvc\View;
 use PhpMvc\Html;
 
@@ -6,7 +7,7 @@ View::setLayout('_layout');
 View::setTitle('Contact');
 ?>
 
-<h2><?=View::getTitle()?></h2>
+<h2><?= View::getTitle() ?></h2>
 
 <address>
     PHP MVC Project street<br />

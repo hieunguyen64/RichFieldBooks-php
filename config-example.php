@@ -1,10 +1,10 @@
 <?php
+define("HOST_DB", '');
+define("USER_DB", '');
+define("PASS_DB", '');
+define("DB", '');
 
-define("ROOT_DIR", __DIR__);
+define ('ROOT', dirname(__FILE__));
+define('BASE_URL', '');
+define('UPLOAD_IMG', ROOT .'');
 
-define("HOST", "");
-define("USER", "");
-define("PASSWORD", "");
-define("DB", "");
-
-define('BASE_URL', '/');

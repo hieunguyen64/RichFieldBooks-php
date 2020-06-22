@@ -1,18 +1,10 @@
 <?php
-
-$c = isset($_GET['controller']) ? $_GET['controller'] : 'ControllerHome';
-
-//echo "controller = $c";
-if (!is_file("controller/$c.php")) {
-    exit;
-}
-
-// use composer autoload for dependencies
-require_once getcwd() . '/vendor/autoload.php';
-
 include "config.php";
-include 'model/ModelDb.php';
-include 'model/ModelBooks.php';
-include "controller/ControllerHome.php";
+include "function.php";
+if (!isset($_SESSION)) session_start();
+spl_autoload_register('loadClass');
 
-$o = new $c(); //chay ham __construct()
+$controller = isset($_GET['controller'])?$_GET['controller']:'Book';
+//echo $controller;
+
+$c = new $controller();

@@ -12,4 +12,3 @@ RewriteRule ^category-(.*)-(.*).html  index.php?Controller=Book&action=bookcat&c
 RewriteRule ^detail-(.*)-(.*).html index.php?Controller=Book&action=detail&id=$2 [L]
 RewriteRule ^user.html  index.php?controller=User
 RewriteRule ^admin.php index.php?controller=Admin&action=index
-

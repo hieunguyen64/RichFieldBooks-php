@@ -84,7 +84,7 @@
         </div>
     </footer>
     
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="<?php echo BASE_URL ?>/content/styles/js/jquery.min.js"></script>
+    <script src="<?php echo BASE_URL ?>/content/styles/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo BASE_URL ?>/content/styles/js/owl.carousel.min.js"></script>
+    <script src="<?php echo BASE_URL ?>/content/styles/js/custom.js"></script>

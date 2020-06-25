@@ -41,6 +41,17 @@ class Book
 		include "View/index.php";
 	}
 
+	function ShopAllBook()
+	{
+		$data_getAllBook = $this->model->getAllBook();
+		$data = $this->model->getRecommendedBook(4);
+		$data_recentlyaddedbook = $this->model->getRecentlyAddedBook();
+		$data_cat = $this->dataCat; // $this->model->getCat();
+		$data_pub = $this->dataPub; //$this->model->getPub();
+		$subview = 'book_index.php';
+		include "View/Shop.php";
+	}
+
 	function bookCat()
 	{
 		$cat_id = getIndex('cat_id');

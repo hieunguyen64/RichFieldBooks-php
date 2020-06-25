@@ -181,6 +181,11 @@ header .main-menu .navbar-brand {
     margin-top: -10px;
 }
 
+header .main-menu .navbar-brand img {
+    margin: 0px 10px;
+    width: 100px;
+}
+
 header .main-menu .navbar-light .navbar-nav .navbar-item {
     padding: 0 15px;
     position: relative;
@@ -353,6 +358,8 @@ header .cart .quntity {
 
 .recomended-sec .item img {
     margin-bottom: 15px;
+    width: 300px;
+    height: 350px;
     max-width: 100%;
 }
 
@@ -526,7 +533,8 @@ header .cart .quntity {
 .recent-book-sec .item img {
     margin-bottom: 15px;
     max-width: 100%;
-    cursor: pointer;
+    height: 250px;
+    width: 200px;
 }
 
 .recent-book-sec .item img:hover+h3 {
@@ -1557,4 +1565,9 @@ footer .copy-right .share span:hover {
 
 .also-liked-book-img {
     height: 150px;
+}
+
+.shop-img {
+    height: 250px;
+    width: 200px;
 }

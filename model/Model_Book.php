@@ -7,9 +7,9 @@ class Model_Book extends Db
 		return $this->getTable('book');
 	}
 
-	function getAllBook($book_id)
+	function getAllBook()
 	{
-		return $this->selectQuery("select * from book where book_id = '$book_id'");
+		return $this->selectQuery("select * from book");
 	}
 
 	function getRecentlyAddedBook()

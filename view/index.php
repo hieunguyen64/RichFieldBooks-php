@@ -3,63 +3,14 @@ include ROOT . '/View/subview/bootstrap_css_import.php';
 ?>
 
 <body>
-<?php
-include ROOT . '/View/subview/header.php';
-?>
-    <section class="slider">
-        <div class="container">
-            <div id="owl-demo" class="owl-carousel owl-theme">
-                <div class="item">
-                    <div class="slide">
-                        <img src="images/slide1.jpg" alt="slide1">
-                        <div class="content">
-                            <div class="title">
-                                <h3>welcome to bookstore</h3>
-                                <h5>Discover the best books online with us</h5>
-                                <a href="#" class="btn">shop books</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slide">
-                        <img src="images/slide2.jpg" alt="slide1">
-                        <div class="content">
-                            <div class="title">
-                                <h3>welcome to bookstore</h3>
-                                <h5>Discover the best books online with us</h5>
-                                <a href="#" class="btn">shop books</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slide">
-                        <img src="images/slide3.jpg" alt="slide1">
-                        <div class="content">
-                            <div class="title">
-                                <h3>welcome to bookstore</h3>
-                                <h5>Discover the best books online with us</h5>
-                                <a href="#" class="btn">shop books</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slide">
-                        <img src="images/slide4.jpg" alt="slide1">
-                        <div class="content">
-                            <div class="title">
-                                <h3>welcome to bookstore</h3>
-                                <h5>Discover the best books online with us</h5>
-                                <a href="#" class="btn">shop books</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php
+    include ROOT . '/View/subview/header.php';
+    ?>
+
+    <?php
+    include ROOT . '/View/subview/Hero_image.php';
+    ?>
+
     <?php
     include ROOT . '/View/subview/recommendeds_books.php';
     ?>
@@ -68,9 +19,13 @@ include ROOT . '/View/subview/header.php';
             <figure style="background:url(./images/about-img.jpg)no-repeat;"></figure>
         </div>
         <div class="about-content">
-            <h2>About bookstore,</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Lorem Ipsum has been the book. </p>
-            <p>It has survived not only fiveLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and</p>
+            <h2>About RichField Books,</h2>
+            <p>
+                Local bookstores in the Seattle area described wariness over the physical presence of richfieldbooks.com, with the University Book Store in the U District noting "different spending patterns" two months after the opening of RichField's store; an RichField spokesperson dismissed the notion that RichField Books would interfere with independent bookstores and their operations, stating that "offline retail is a big space with room for lots of winners."
+
+                The executive vice president of Half Price Books, a national chain of new and used bookstores, saw the interest that RichField is showing in expanding brick-and-mortar bookstores as something good for the industry, stating in February 2016 that it was a sign that the "printed word isn't dead".
+             </p>
+
             <div class="btn-sec">
                 <a href="shop.html" class="btn yellow">shop books</a>
                 <a href="login.html" class="btn black">subscriptions</a>
@@ -104,33 +59,7 @@ include ROOT . '/View/subview/header.php';
             </ul>
         </div>
     </section>
-    <section class="offers-sec" style="background:url(images/offers.jpg)no-repeat;">
-        <div class="cover"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="detail">
-                        <h3>Top 50% OFF on Selected</h3>
-                        <h6>We are now offering some good discount
-                            on selected books go and shop them</h6>
-                        <a href="products.html" class="btn blue-btn">view all books</a>
-                        <span class="icon-point percentage">
-                            <img src="images/precentagae.png" alt="">
-                        </span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="detail">
-                        <h3>Shop $ 500 Above and Get Extra!</h3>
-                        <h6>We are now offering some good discount
-                            on selected books go and shop them</h6>
-                        <a href="products.html" class="btn blue-btn">view all books</a>
-                        <span class="icon-point amount"><img src="images/amount.png" alt=""></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <section class="testimonial-sec">
         <div class="container">
             <div id="testimonal" class="owl-carousel owl-theme">
@@ -171,7 +100,7 @@ include ROOT . '/View/subview/header.php';
             <img src="images/right-quote.png" alt="quote">
         </div>
     </section>
-    
+
     <?php
     include ROOT . '/View/subview/footer.php';
     ?>

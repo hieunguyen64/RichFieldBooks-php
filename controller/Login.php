@@ -61,7 +61,7 @@ class Login
 		{
 			$row2 = $this->model->getAdminByIdPass($u, $p);
 			if (Count($row2) == 0)
-				$_SESSION['flash'] = 'Khong tin sai!';
+				$_SESSION['flash'] = 'Incorrect username or password!';
 			else {
 				$_SESSION['admin_login'] = $row2;
 				header('location:admin.php');

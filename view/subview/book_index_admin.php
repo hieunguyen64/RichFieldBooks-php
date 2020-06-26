@@ -91,7 +91,7 @@
 				<td><?php echo $value['book_name'] ?></td>
 				<td><?php echo $value['price'] ?></td>
 				<td>
-					<img src="<?php echo BASE_URL ?>/image/book/<?php echo $value['img'] ?>">
+					<img src="<?php echo BASE_URL ?>/content/images/<?php echo $value['img'] ?>">
 				</td>
 				<td> <a href="<?php echo BASE_URL ?>/chi-tiet-
 					<?php echo chuanHoaChuoi($value['book_name']) ?>-<?php echo $value['book_id'] ?>.html">Chi tiet</a> </td>

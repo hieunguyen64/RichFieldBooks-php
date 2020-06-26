@@ -83,71 +83,15 @@
 				<a href="<?php echo BASE_URL ?>/" title="View the Site">View the Site</a> | <a href="<?php echo BASE_URL ?>/index.php?controller=Login&action=logout" title="Sign Out">Sign Out</a>
 			</div>        
 			
-			<ul id="main-nav">  <!-- Accordion Menu -->
-				
-				<li>
-					<a href="<?php echo BASE_URL ?>/admin.php" class="nav-top-item no-submenu"> <!-- Add the class "no-submenu" to menu items with no sub menu -->
-						Dashboard
-					</a>       
-				</li>
-				
+			<ul id="main-nav">  <!-- Accordion Menu -->			
 				<li> 
 					<a href="<?php echo BASE_URL ?>/admincp/#" class="nav-top-item current"> <!-- Add the class "current" to current menu item -->
 					Articles
 					</a>
 					<ul>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Write a new Article</a></li>
-						<li><a class="current" href="<?php echo BASE_URL ?>/admincp/#">Manage Articles</a></li> <!-- Add class "current" to sub menu items also -->
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Manage Comments</a></li>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Manage Categories</a></li>
+						<li><a class="current" href="#">Manage Articles</a></li> <!-- Add class "current" to sub menu items also -->
 					</ul>
-				</li>
-				
-				<li>
-					<a href="<?php echo BASE_URL ?>/admincp/#" class="nav-top-item">
-						Pages
-					</a>
-					<ul>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Create a new Page</a></li>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Manage Pages</a></li>
-					</ul>
-				</li>
-				
-				<li>
-					<a href="<?php echo BASE_URL ?>/admincp/#" class="nav-top-item">
-						Image Gallery
-					</a>
-					<ul>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Upload Images</a></li>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Manage Galleries</a></li>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Manage Albums</a></li>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Gallery Settings</a></li>
-					</ul>
-				</li>
-				
-				<li>
-					<a href="<?php echo BASE_URL ?>/admincp/#" class="nav-top-item">
-						Events Calendar
-					</a>
-					<ul>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Calendar Overview</a></li>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Add a new Event</a></li>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Calendar Settings</a></li>
-					</ul>
-				</li>
-				
-				<li>
-					<a href="<?php echo BASE_URL ?>/admincp/#" class="nav-top-item">
-						Settings
-					</a>
-					<ul>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">General</a></li>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Design</a></li>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Your Profile</a></li>
-						<li><a href="<?php echo BASE_URL ?>/admincp/#">Users and Permissions</a></li>
-					</ul>
-				</li>      
-				
+				</li>						
 			</ul> <!-- End #main-nav -->
 			
 			<div id="messages" style="display: none"> <!-- Messages are shown when a link with these attributes are clicked: href="<?php echo BASE_URL ?>/admincp/#messages" rel="modal"  -->
@@ -210,38 +154,8 @@
 			</noscript>
 			
 			<!-- Page Head -->
-			<h2>Welcome John</h2>
-			<p id="page-intro">What would you like to do?</p>
-			
-			<ul class="shortcut-buttons-set">
-				
-				<li><a class="shortcut-button" href="<?php echo BASE_URL ?>/admincp/#"><span>
-					<img src="<?php echo BASE_URL ?>/admincp/resources/images/icons/pencil_48.png" alt="icon" /><br />
-					Write an Article
-				</span></a></li>
-				
-				<li><a class="shortcut-button" href="<?php echo BASE_URL ?>/admincp/#"><span>
-					<img src="<?php echo BASE_URL ?>/admincp/resources/images/icons/paper_content_pencil_48.png" alt="icon" /><br />
-					Create a New Page
-				</span></a></li>
-				
-				<li><a class="shortcut-button" href="<?php echo BASE_URL ?>/admincp/#"><span>
-					<img src="<?php echo BASE_URL ?>/admincp/resources/images/icons/image_add_48.png" alt="icon" /><br />
-					Upload an Image
-				</span></a></li>
-				
-				<li><a class="shortcut-button" href="<?php echo BASE_URL ?>/admincp/#"><span>
-					<img src="<?php echo BASE_URL ?>/admincp/resources/images/icons/clock_48.png" alt="icon" /><br />
-					Add an Event
-				</span></a></li>
-				
-				<li><a class="shortcut-button" href="<?php echo BASE_URL ?>/admincp/#messages" rel="modal"><span>
-					<img src="<?php echo BASE_URL ?>/admincp/resources/images/icons/comment_48.png" alt="icon" /><br />
-					Open Modal
-				</span></a></li>
-				
-			</ul><!-- End .shortcut-buttons-set -->
-			
+			<h2>Welcome <?php echo $_SESSION['admin_login']['name'] ?></h2>
+
 			<div class="clear"></div> <!-- End .clear -->
 			
 			<div class="content-box">

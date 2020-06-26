@@ -1,32 +1,32 @@
 <form action="index.php?controller=Admin&action=updatebook" method="post" enctype="multipart/form-data">
 	<table>
 		<tr>
-			<td>Ma sach</td>
+			<td>Book Id</td>
 			<td>
 				<input type="text" name="book_id" value="<?php echo $data['book_id'] ?>">
 			</td>
 		</tr>
 		<tr>
-			<td></td>
+			<td>Book Name</td>
 			<td>
 				<input type="text" name="book_name" value="<?php echo $data['book_name'] ?>">
 			</td>
 		</tr>
 		<tr>
-			<td></td>
+			<td>Description</td>
 			<td>
 				<textarea name="description"><?php echo $data['description'] ?>
 				</textarea>
 			</td>
 		</tr>
 		<tr>
-			<td></td>
+			<td>Price</td>
 			<td>
 				<input type="text" name="price" value="<?php echo $data['price'] ?>">
 			</td>
 		</tr>
 		<tr>
-			<td></td>
+			<td>Catergory</td>
 			<td>
 				<select name="cat_id">
 					<?php 
@@ -40,7 +40,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td></td>
+			<td>Publisher</td>
 			<td>
 				<select name="pub_id">
 					<?php 
@@ -58,7 +58,7 @@
 				<input type="file" name="img">
 			</td>
 			<td>
-				<img src="<?php echo BASE_URL ?>/images/book/<?php echo $data['img'] ?>">
+				<img style="width: 300px; height: 450px;" src="<?php echo BASE_URL ?>/content/images/<?php echo $data['img'] ?>">
 			</td>
 		</tr>
 		<tr>

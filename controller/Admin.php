@@ -44,7 +44,7 @@ class Admin
 		$data_cat = $this->model->getCat();
 		$data_pub = $this->model->getPub();
 		$admin_sub_view='admin_edit.php';
-		include ROOT ."/View/index.php";
+		include ROOT ."/View/admin_layout1.php";
 	}
 
 	function listBook()

@@ -173,12 +173,11 @@ header .main-menu {
 }
 
 header .main-menu .navbar {
-    padding: 0;
+    padding: 0px;
 }
 
 header .main-menu .navbar-brand {
     padding: 0;
-    margin-top: -10px;
 }
 
 header .main-menu .navbar-brand img {

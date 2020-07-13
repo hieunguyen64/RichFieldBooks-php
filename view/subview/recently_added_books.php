@@ -12,7 +12,7 @@
                     <div class="item">
                         <img src="<?php echo BASE_URL ?>/content/images/<?php echo $value['img'] ?>" alt="img">
                         <h3>
-                            <a href="detail-<?php echo chuanHoaChuoi($value['book_name']) ?>-<?php echo $value['book_id'] ?>.html"><?php echo $value['book_name'] ?></a>
+                            <a href="detail-<?php echo chuanHoaChuoi($value['book_name']) ?>-<?php echo $value['book_id'] ?>"><?php echo $value['book_name'] ?></a>
                         </h3>
                         <h6><span class="price"><?php echo $value['price'] ?>VNĐ</span> / <a href="#">Buy Now</a></h6>
                     </div>

@@ -21,6 +21,7 @@ class Db
 		$stm->execute($arr);
 		return $stm->fetchAll(PDO::FETCH_ASSOC);
 	}
+
 	function updateQuery($sql, $arr=array())
 	{
 		$stm = $this->conn->prepare($sql);

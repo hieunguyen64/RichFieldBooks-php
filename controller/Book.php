@@ -49,7 +49,7 @@ class Book
 		$data_cat = $this->dataCat; // $this->model->getCat();
 		$data_pub = $this->dataPub; //$this->model->getPub();
 		$subview = 'book_index.php';
-		include "View/Shop.php";
+		include "View/shop.php";
 	}
 
 	function bookCat()
@@ -83,7 +83,7 @@ class Book
 		if ($book_id != '') {
 			$data = $this->model->detail($book_id);
 		}
-		$data_getRecommendedBook= $this->model->getRecommendedBook(4);;
+		$data_getRecommendedBook = $this->model->getRecommendedBook(4);;
 		$data_cat = $this->dataCat;
 		$data_pub = $this->dataPub;
 		$subview = 'product-single.php';
